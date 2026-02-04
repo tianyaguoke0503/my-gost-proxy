@@ -1,5 +1,5 @@
 FROM ginuerzh/gost:latest
-# 暴露容器端口
+# 显式声明端口
 EXPOSE 8080
-# 使用 ws 协议，既避开了 TLS 握手问题，又比普通 http 更稳定
+# 云端 gost 监听 8080 端口的 ws 协议
 CMD ["-L=ws://admin:123456@:8080"]
