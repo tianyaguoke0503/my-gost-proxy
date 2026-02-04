@@ -1,4 +1,4 @@
 FROM ginuerzh/gost:latest
 ENTRYPOINT ["/bin/gost"]
-# 注意：协议改成了 mws，账号密码我设为 tian:123456
-CMD ["-L=mws://tian:123456@:8080"]
+# 统一使用 admin:123456，协议换回 http
+CMD ["-L=admin:123456@:8080"]
