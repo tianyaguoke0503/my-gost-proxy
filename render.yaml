@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: my-gost-proxy
+    env: docker
+    plan: free
+    region: singapore # 选新加坡，离你近且对 Telegram 友好
+    numInstances: 1
